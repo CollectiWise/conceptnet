@@ -65,6 +65,8 @@ ADD web/static /var/www/static
 WORKDIR /src/conceptnet-web
 RUN pip install -e '.'
 
+RUN pip install elasticsearch
+
 # Run the web server via its supervisor configuration
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
 

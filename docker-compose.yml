@@ -23,7 +23,7 @@ services:
     links:
       - db
     ports:
-      - "80:80"
+      - "8090:80"
     environment:
       - CONCEPTNET_DB_HOSTNAME=db
       - CONCEPTNET_BUILD_DATA=/data/conceptnet
