@@ -8,6 +8,8 @@ services:
       - "5432"
     environment:
       - POSTGRES_DB=conceptnet5
+      #- POSTGRES_USER=postgres
+      #- POSTGRES_PASSWORD=y5tANNgCfCzXE9zy
     volumes:
       - data:/data/conceptnet
       - psql:/var/lib/postgresql/data
@@ -38,7 +40,4 @@ services:
         max-size: "10m"
         max-file: "10"
 
-volumes:
-  psql:
-  data:
-  cache:
+

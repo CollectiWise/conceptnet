@@ -22,6 +22,10 @@ spec:
       - env:
         - name: POSTGRES_DB
           value: conceptnet5
+        #- name: POSTGRES_PASSWORD
+          #value: y5tANNgCfCzXE9zy
+        #- name: POSTGRES_USER
+          #value: postgres
         image: rspeer/conceptnet-data:5.5.5
         name: db
         resources: {}
